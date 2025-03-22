@@ -53,3 +53,31 @@ cards **//
         </div>
 
 ///***
+
+
+///************OSTALE USLUGE ******//////////////
+
+<div class="ostale-usluge mx-20 pb-10 max-lg:mx-10">
+            <h1 class="uppercase text-5xl font-bold max-md:text-center">Ostale usluge</h1>
+            <div class="ostale-card my-5 flex flex-row max-lg:items-center max-md:flex-col max-md:gap-5 max-md:mx-12 max-md:my-12 max-sm:mx-2 max-sm:my-0 max-sm:mt-10">
+                <div class="ostale-left w-1/2 max-md:w-4/5 max-sm:w-full">
+                    <img src="./img/ostale.jpg" class="rounded-md">
+                </div>
+                <div class="ostale-right w-1/2 flex flex-col items-end justify-center gap-5 max-lg:items-center max-md:w-full">
+                    <p class="font-bold text-3xl text-end max-lg:text-2xl max-lg:text-center">
+                        Sa našim partnerima možemo da obezbedimo
+                        i pružanje usluga iz oblasti ispitivanja:
+                    </p>
+                    <div class="usluge-list flex flex-col items-end justify-end border-t-2 py-5 gap-5 max-lg:items-center max-lg:gap-3">
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Buke u životnoj sredini</p>
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Ambijentalnog vazduha</p>
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Zemljišta, sedimenta i mulja</p>
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Voda (otpadne, podzemne i dr.)</p>
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Otpada (kategorizacija otpada)</p>
+                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Kao i ostale usluge iz oblasti ZOP-a</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+**********//////////////////////
