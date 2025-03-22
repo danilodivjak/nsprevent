@@ -9,6 +9,9 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+.mobile-nav p{
+  color:#5864ac;
+}
 .hero {
   background-image: url(img/onama-3.png);
   background-size: cover;
