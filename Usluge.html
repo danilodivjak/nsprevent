@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Usluge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>NS Prevent | O nama</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="hero flex flex-col px-16">
+
+        <div class="header flex flex-row items-between w-full justify-between my-10">
+            <div class="logo">
+                <img src="./img/logo.png">
+            </div>
+            <div class="nav flex gap-10">
+                <a href="./index.html"><p class="text-lg">Pocetna</p></a>
+                <a href="./oNama.html"><p class="text-lg">O Nama</p></a>
+                <a href="./Usluge.html"><p class="text-lg up">Nase Usluge</p></a>
+                <a href="#contact"><p class="text-lg">Kontakt</p></a>
+            </div>  
+        </div>
+        <div class="hero-section flex flex-col mx-auto items-center gap-8 my-40">
+            <h1 class="text-6xl font-600 font-bold uppercase">Nase usluge</h1>
+            <div class="zahtev flex flex-col items-center gap-3">
+                <h2 class="font-bold text-3xl">Zahtev za uslugu</h2>
+                <button class="btn-blue px-5 py-5 rounded-full text-white text-xl">Preuzmite zahtev za uslugu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="usluge w-4/5 mx-auto my-20 max-lg:my-10">
+        <div class="usluge-header flex flex-row items-stretch justify-center my-10">
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="bzr">BEZBEDNOST I ZDRAVLJE NA RADU</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="pozar">ZAŠTITA OD POŽARA</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="zivotna">ZAŠTITA ŽIVOTNE SREDINE</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="vanredne">VANREDNE SITUACIJE</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="menadzment">SISTEMI MENADŽMENTA</p>
+        </div>
+    
+        <div class="usluge-cards flex justify-center">
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 active w-full rounded-md" data-usluga="bzr">
+                <div class="card-left flex flex-col items-center gap-5">
+                    <h1 class="text-4xl text-center">BEZBEDNOST I ZDRAVLJE NA RADU</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/prsluk.svg" class="w-1/3 rounded-md mx-5 w-1/2">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="pozar">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">ZAŠTITA OD POŽARA</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/ppaparat.svg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="zivotna">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">ZAŠTITA ŽIVOTNE SREDINE</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/sredina.jpg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="vanredne">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">VANREDNE SITUACIJE</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/vanredne.jpg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="menadzment">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">SISTEMI MENADŽMENTA</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                    <img src="./img/iso-ico.svg" class="w-1/3 rounded-md mx-5">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-20"></hr>
+
+        <div class="ostale-usluge">
+            <h1 class="uppercase text-5xl">Ostale usluge</h1>
+            <div class="ostale-card my-5 flex flex-row">
+                <div class="ostale-left w-1/2">
+                    <img src="./img/ostale.jpg" class="rounded-md">
+                </div>
+                <div class="ostale-right w-1/2 flex flex-col items-end justify-center gap-5">
+                    <p class="font-bold text-3xl text-end">
+                        Sa našim partnerima možemo da obezbedimo
+                        i pružanje usluga iz oblasti ispitivanja:
+                    </p>
+                    <div class="usluge-list flex flex-col items-end justify-end border-t-2 py-5 gap-5">
+                        <p class="text-2xl">Buke u životnoj sredini</p>
+                        <p class="text-2xl">Ambijentalnog vazduha</p>
+                        <p class="text-2xl">Zemljišta, sedimenta i mulja</p>
+                        <p class="text-2xl">Voda (otpadne, podzemne i dr.)</p>
+                        <p class="text-2xl">Otpada (kategorizacija otpada)</p>
+                        <p class="text-2xl">Kao i ostale usluge iz oblasti ZOP-a</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content flex flex-col px-10 py-10 gap-10">
+            <div class="footer-top flex flex-row items-center justify-between">
+                <div class="footer-logo flex flex-row items-center">
+                    <img src="./img/logo-white.png">
+                    <h2 class="text-white text-4xl font-bold">NS Prevent</h2>
+                </div>
+                <div class="footer-nav flex flex-row gap-2 justify-end">
+                    <a href="./index.html"><p class="text-lg text-white">Pocetna</p></a>
+                    <a><p class="text-lg text-white">O Nama</p></a>
+                    <a href="./Usluge.html"><p class="text-lg text-white">Nase Usluge</p></a>
+                    <a href="#contact"><p class="text-lg text-white">Kontakt</p></a>
+                </div>
+            </div>
+            <div class="footer-info flex flex-row justify-between">
+                <div class="adress flex-1 flex-row items-start">
+                    <section class="flex flex-col">
+                        <p class="text-white">Bulevar Jovana Dučića 47, Novi Sad</p>
+                        <p class="text-white">Trg Cara Jovana Nenada br. 15, kanc. 114, Subotica</p>
+                    </section>
+                </div>
+
+                <div class="phone flex-1 flex-row gap-2">
+                    <section class="flex flex-col items-center">
+                        <p class="text-white">office@nsprevent.rs</p>
+                        <p class="text-white">igor.simonji@nsprevent.rs</p>
+                        <p class="text-white">zoran.cvetkovic@nsprevent.rs</p>
+                        <p class="text-white">nina.ivanovic@nsprevent.rs</p>
+                    </section>
+                </div>
+
+                <div class="email flex-1 flex-row-reverse items-start">
+                    <section class="flex flex-col items-end">
+                        <p class="text-white">Igor: +381 63 833 47 47 </p>
+                        <p class="text-white">Zoran: +381 60 170 23 77</p>
+                        <p class="text-white">Nina: +381 69 8500 460</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".usluge-header p");
+            const cards = document.querySelectorAll(".usluge-card");
+    
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const selectedUsluga = this.getAttribute("data-usluga");
+    
+                    cards.forEach(card => {
+                        card.classList.add("hidden");
+                    });
+    
+                    document.querySelector(`.usluge-card[data-usluga="${selectedUsluga}"]`).classList.remove("hidden");
+                });
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
