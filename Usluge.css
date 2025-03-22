@@ -35,7 +35,6 @@ body {
 .hero .hero-section .btn-section button:hover {
   background-color: #4a59b0;
 }
-
 .contact-logo {
   width: 36px;
   height: auto;
@@ -47,27 +46,6 @@ body {
 
 .contact-card:nth-last-child(1) {
   border: none;
-}
-
-.usluge-card {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(10px);
-    background-color: hsl(231, 34%, 51%, 0.5);
-}
-.card-left{
-  color:white;
-}
-.usluge, .usluge-header p{
-  border-right: 1px solid #5864ac;
-}
-.usluge, .usluge-header p:nth-last-child(1){
-  border:none;
-}
-
-.usluge-card:not(.hidden) {
-    opacity: 1;
-    transform: translateY(0);
 }
 .btn-blue{
   background-color: #5864ac;

@@ -1,0 +1,55 @@
+cards **//
+
+<div class="usluge mx-20 my-20 max-lg:my-10">
+        <div class="usluge-header flex flex-row items-stretch justify-center my-10">
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="bzr">BEZBEDNOST I ZDRAVLJE NA RADU</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="pozar">ZAŠTITA OD POŽARA</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="zivotna">ZAŠTITA ŽIVOTNE SREDINE</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="vanredne">VANREDNE SITUACIJE</p>
+            <p class="text-2xl w-1/5 cursor-pointer text-center flex items-center justify-center px-5" data-usluga="menadzment">SISTEMI MENADŽMENTA</p>
+        </div>
+    
+        <div class="usluge-cards flex justify-center">
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 active w-full rounded-md" data-usluga="bzr">
+                <div class="card-left flex flex-col items-center gap-5">
+                    <h1 class="text-4xl text-center">BEZBEDNOST I ZDRAVLJE NA RADU</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/prsluk.svg" class="w-1/3 rounded-md mx-5 w-1/2">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="pozar">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">ZAŠTITA OD POŽARA</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/ppaparat.svg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="zivotna">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">ZAŠTITA ŽIVOTNE SREDINE</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/sredina.jpg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="vanredne">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">VANREDNE SITUACIJE</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                <img src="./img/vanredne.jpg" class="w-1/3 rounded-md mx-5">
+            </div>
+    
+            <div class="usluge-card flex justify-center flex-row items-center gap-20 py-10 my-5 hidden w-full rounded-md" data-usluga="menadzment">
+                <div class="card-left flex flex-col items-center gap-5 w-1/2">
+                    <h1 class="text-4xl text-center">SISTEMI MENADŽMENTA</h1>
+                    <p class="text-lg">Detaljnije</p>
+                </div>
+                    <img src="./img/iso-ico.svg" class="w-1/3 rounded-md mx-5">
+                </div>
+            </div>
+        </div>
+
+///***
