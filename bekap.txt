@@ -52,6 +52,24 @@ cards **//
             </div>
         </div>
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".usluge-header p");
+            const cards = document.querySelectorAll(".usluge-card");
+    
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const selectedUsluga = this.getAttribute("data-usluga");
+    
+                    cards.forEach(card => {
+                        card.classList.add("hidden");
+                    });
+    
+                    document.querySelector(`.usluge-card[data-usluga="${selectedUsluga}"]`).classList.remove("hidden");
+                });
+            });
+        });
+
+
 ///***
 
 
@@ -81,3 +99,38 @@ cards **//
             </div>
         </div>
 **********//////////////////////
+
+
+
+<div class="usluge-card flex flex-row items-center gap-10 col-span-3 flex justify-center gap-10 max-md:flex-col">
+
+                <div class="bg-white p-5 rounded-2xl w-1/3 text-center border-2 flex flex-col gap-5 transition duration-300 hover:scale-105 shadow-lg max-md:w-full">
+                    <div class="card-upper flex justify-center">
+                        <img src="./img/emergency.svg" class="w-1/2">
+                    </div>
+                    <div class="card-lower flex items-center flex-col gap-2">
+                        <h1 class="text-2xl text-center font-bold">VANREDNE SITUACIJE</h1>
+                        <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                    </div>
+                </div>
+    
+                <div class="bg-white p-5 rounded-2xl w-1/3 text-center border-2 flex flex-col gap-5 transition duration-300 hover:scale-105 shadow-lg max-md:w-full">
+                    <div class="card-upper flex justify-center">
+                        <img src="./img/iso-ico.svg" class="w-1/2">
+                    </div>
+                    <div class="card-lower flex items-center flex-col gap-2">
+                        <h1 class="text-2xl text-center font-bold">SISTEMI MENADŽMENTA</h1>
+                        <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                

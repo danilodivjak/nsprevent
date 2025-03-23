@@ -64,6 +64,7 @@ body {
 .footer{
   background-color: #5864ac;
 }
+
 @media(max-width:640px){
   .hero {
     background-image: url(img/onama-3.png);

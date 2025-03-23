@@ -46,99 +46,173 @@
             <h1 class="text-6xl font-600 font-bold uppercase text-center">Nase usluge</h1>
             <div class="zahtev flex flex-col items-center gap-3">
                 <h2 class="font-bold text-3xl text-center">Zahtev za uslugu</h2>
-                <button class="btn-blue px-5 py-5 rounded-full text-white text-xl max-sm:my-5">
-                    <div class="flex flex-row items-center gap-2">Preuzmite zahtev <img src="./img/download.svg" class="w-8">
+                <a href="https://nsprevent.rs/wp-content/uploads/2025/02/Zahtev-za-uslugu.pdf" class="btn-blue px-5 py-5 rounded-full text-white text-xl max-sm:my-5">
+                    <div class="flex flex-row items-center gap-1">Preuzmite zahtev <img src="./img/download.svg" class="w-8">
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="usluge mx-20 my-20 max-lg:mx-10 max-lg:my-12 max-sm:my-10 max-sm:mx-0">
-        <div class="usluge-cards grid grid-cols-3 gap-10 justify-center py-10 max-md:flex max-md:flex-col max-md:mx-10">
+        <div class="usluge-cards grid grid-cols-3 gap-10 justify-center py-10 max-lg:grid max-lg:grid-cols-2 max-lg:mx-0 max-sm:flex max-sm:flex-col max-sm:mx-8">
             
-            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg">
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
                 <div class="card-upper flex justify-center">
                     <img src="./img/prsluk.svg" class="w-1/2">
                 </div>
                 <div class="card-lower flex items-center flex-col gap-2">
                     <h1 class="text-2xl text-center font-bold">BEZBEDNOST I ZDRAVLJE NA RADU</h1>
-                    <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                    <button onclick="openPopup('popup-1')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-1" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4">Detalji o usluzi</h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Konsalting u oblasti BZR</li>
+                            <li>Vođenje poslova BZR za druga pravna lica</li>
+                            <li>Izrada dokumentacije iz oblasti BZNR</li>
+                            <li>Obuka zaposlenih za bezbedan i zdrav rad</li>
+                            <li>Prijava radova i izrada elaborata o uređenju gradilišta</li>
+                            <li>Usluga koordinatora u fazi izvođenja radova</li>
+                            <li>Izrada plana preventivnih mera</li>
+                            <li>Prijava gradilišta prema inspekciji rada</li>
+                            <li>Prijava povrede na radu i izrada Izveštaja o povredi na radu</li>
+                            <li>Saradnja sa inspekcijom rada</li>
+                            <li>Izrada procedura, uputstava i obezbeđivanje oznaka iz oblasti BZR</li>
+                            <li>Organizovanje prethodnih i periodičnih lekarskih pregleda</li>
+                            <li>Pregledi, provere i ispitivanja</li>
+                            <li>Pregledi i provere opreme za rad, pregled i ispitivanje električnih i gromobranskih instalacija u skladu sa Pravilnikom o postupku pregleda i provere opreme za rad i pregleda i ispitivanja električnih i gromobranskih instalacija i ispitivanja uslova radne sredine („Sl. glasnik RS“, br. 76/2024)</li>
+                            <li>Ispitivanje koncentracije zapaljivih i eksplozivnih gasova i para</li>
+                            <li>Organizovanje stručnih obuka za zaposlene (JPOA)</li>
+                        </ul>
+                        <button onclick="closePopup('popup-1')" class="btn-blue py-3 my-2 px-6 mt-auto rounded-full text-white mx-auto">Zatvori</button>
+                    </div>
                 </div>
             </div>
-    
-            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg">
+            
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
                 <div class="card-upper flex justify-center">
                     <img src="./img/ppaparat.svg" class="w-1/2">
                 </div>
                 <div class="card-lower flex items-center flex-col gap-2">
                     <h1 class="text-2xl text-center font-bold">ZAŠTITA OD POŽARA</h1>
-                    <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                    <button onclick="openPopup('popup-2')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-2" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4">Detalji o usluzi</h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Izrada Pravila zaštite od požara</li>
+                            <li>Izrada plana evakuacije</li>
+                            <li>Izrada programa osnovne obuke zaštite od požara za zaposlene</li>
+                        </ul>
+                        <button onclick="closePopup('popup-2')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
+                    </div>
                 </div>
             </div>
-    
-            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg">
+            
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
                 <div class="card-upper flex justify-center">
                     <img src="./img/eco.svg" class="w-1/2">
                 </div>
                 <div class="card-lower flex items-center flex-col gap-2">
                     <h1 class="text-2xl text-center font-bold">ZAŠTITA ŽIVOTNE SREDINE</h1>
-                    <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                    <button onclick="openPopup('popup-3')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-3" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4">Detalji o usluzi</h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Izrada Studija o proceni uticaja na životnu sredinu</li>
+                            <li>Izrada elaborata o upravljanju otpadom na gradilištu</li>
+                            <li>Izrada Plana upravljanja otpadom od građenja i rušenja</li>
+                            <li>Izrada Plana upravljanja otpadom</li>
+                            <li>Usluge ADR savetnika</li>
+                            <li>Obuka rukovaoca opasnim teretom sa stanovišta ADR-a</li>
+                        </ul>
+                        <button onclick="closePopup('popup-3')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
+                    </div>
                 </div>
             </div>
-    
-            <div class="usluge-card flex flex-row items-center gap-10 col-span-3 flex justify-center gap-10 max-md:flex-col">
-
-                <div class="bg-white p-5 rounded-2xl w-1/3 text-center border-2 flex flex-col gap-5 transition duration-300 hover:scale-105 shadow-lg max-md:w-full">
-                    <div class="card-upper flex justify-center">
-                        <img src="./img/emergency.svg" class="w-1/2">
-                    </div>
-                    <div class="card-lower flex items-center flex-col gap-2">
-                        <h1 class="text-2xl text-center font-bold">VANREDNE SITUACIJE</h1>
-                        <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+            
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
+                <div class="card-upper flex justify-center">
+                    <img src="./img/emergency.svg" class="w-1/2">
+                </div>
+                <div class="card-lower flex items-center flex-col gap-2">
+                    <h1 class="text-2xl text-center font-bold">VANREDNE SITUACIJE</h1>
+                    <button onclick="openPopup('popup-4')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-4" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4">Detalji o usluzi</h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Izrada procene rizika od katastrofa</li>
+                            <li>Izrada planova zaštite i spasavanja</li>
+                            <li>Izrada planova zaštite od udesa</li>
+                            <li>Izrada planova smanjenja rizika od katastrofa</li>
+                            <li>Izrada eksternih planova zaštite od velikog udesa</li>
+                            <li>Konsultantske usluge u oblasti vanrednih situacija</li>
+                        </ul>
+                        <button onclick="closePopup('popup-4')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
                     </div>
                 </div>
-    
-                <div class="bg-white p-5 rounded-2xl w-1/3 text-center border-2 flex flex-col gap-5 transition duration-300 hover:scale-105 shadow-lg max-md:w-full">
-                    <div class="card-upper flex justify-center">
-                        <img src="./img/iso-ico.svg" class="w-1/2">
-                    </div>
-                    <div class="card-lower flex items-center flex-col gap-2">
-                        <h1 class="text-2xl text-center font-bold">SISTEMI MENADŽMENTA</h1>
-                        <button class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
-                    </div>
-                </div>
-
             </div>
+            
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
+                <div class="card-upper flex justify-center">
+                    <img src="./img/iso-ico.svg" class="w-1/2">
+                </div>
+                <div class="card-lower flex items-center flex-col gap-2">
+                    <h1 class="text-2xl text-center font-bold">SISTEMI MENADŽMENTA</h1>
+                    <button onclick="openPopup('popup-5')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-5" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4">Detalji o usluzi</h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Konsultantske usluge za ISO 9001, ISO 14001, ISO 45001, ISO/IEC 17025 i ISO/IEC 17020</li>
+                        </ul>
+                        <button onclick="closePopup('popup-5')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usluge-card flex flex-col items-center border-2 rounded-2xl px-5 py-5 gap-5 transition duration-300 hover:scale-105 shadow-lg relative">
+                <div class="card-upper flex justify-center">
+                    <img src="./img/handshake.svg" class="w-1/2">
+                </div>
+                <div class="card-lower flex items-center flex-col gap-2">
+                    <h1 class="text-2xl text-center font-bold">OSTALE USLUGE</h1>
+                    <button onclick="openPopup('popup-6')" class="btn-blue py-3 px-10 rounded-full text-white">Detaljnije</button>
+                </div>
+                
+                <div id="popup-6" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
+                    <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
+                        <h2 class="text-2xl font-bold mb-4 max-md:text-lg">Detalji o usluzi</h2>
+                        <h2 class="text-2xl font-bold mb-4 max-md:text-lg">Sa našim partnerima možemo da obezbedimo
+                            i pružanje usluga iz oblasti ispitivanja:
+                        </h2>
+                        <ul class="list-disc mx-5 flex-grow">
+                            <li>Ambijentalnog vazduha</li>
+                            <li>Voda (otpadne, podzemne i dr.)</li>
+                            <li>Buke u životnoj sredini</li>
+                            <li>Zemljišta, sedimenta i mulja</li>
+                            <li>Otpada (kategorizacija otpada)</li>
+                            <li>Kao i ostale usluge iz oblasti ZOP-a</li>
+                        </ul>
+                        <button onclick="closePopup('popup-6')" class="btn-blue py-3 my-2 px-6 mt-auto rounded-full text-white mx-auto">Zatvori</button>
+                    </div>
+                </div>
+            </div>
+
          </div>
-    </div>
-
-        <hr class="my-20"></hr>
-
-        <div class="ostale-usluge mx-20 pb-10 max-lg:mx-10">
-            <h1 class="uppercase text-5xl font-bold max-md:text-center">Ostale usluge</h1>
-            <div class="ostale-card my-5 flex flex-row max-lg:items-center max-md:flex-col max-md:gap-5 max-md:mx-12 max-md:my-12 max-sm:mx-2 max-sm:my-0 max-sm:mt-10">
-                <div class="ostale-left w-1/2 max-md:w-4/5 max-sm:w-full">
-                    <img src="./img/ostale.jpg" class="rounded-md">
-                </div>
-                <div class="ostale-right w-1/2 flex flex-col items-end justify-center gap-5 max-lg:items-center max-md:w-full">
-                    <p class="font-bold text-3xl text-end max-lg:text-2xl max-lg:text-center">
-                        Sa našim partnerima možemo da obezbedimo
-                        i pružanje usluga iz oblasti ispitivanja:
-                    </p>
-                    <div class="usluge-list flex flex-col items-end justify-end border-t-2 py-5 gap-5 max-lg:items-center max-lg:gap-3">
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Buke u životnoj sredini</p>
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Ambijentalnog vazduha</p>
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Zemljišta, sedimenta i mulja</p>
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Voda (otpadne, podzemne i dr.)</p>
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Otpada (kategorizacija otpada)</p>
-                        <p class="text-2xl max-lg:text-lg max-md:text-xl max-sm:text-lg">Kao i ostale usluge iz oblasti ZOP-a</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
     </div>
     
     <div class="footer">
@@ -183,41 +257,33 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll(".usluge-header p");
-            const cards = document.querySelectorAll(".usluge-card");
-    
-            buttons.forEach(button => {
-                button.addEventListener("click", function () {
-                    const selectedUsluga = this.getAttribute("data-usluga");
-    
-                    cards.forEach(card => {
-                        card.classList.add("hidden");
-                    });
-    
-                    document.querySelector(`.usluge-card[data-usluga="${selectedUsluga}"]`).classList.remove("hidden");
-                });
-            });
-        });
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const openMenuBtn = document.querySelector(".menu-toggle");
+    const closeMenuBtn = document.querySelector(".mobile-menu img"); 
 
-        document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenu = document.querySelector(".mobile-menu");
-        const openMenuBtn = document.querySelector(".menu-toggle");
-        const closeMenuBtn = document.querySelector(".mobile-menu img"); 
-
-        openMenuBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("hidden"); 
-            mobileMenu.classList.add("flex"); 
-        });
-
-        closeMenuBtn.addEventListener("click", () => {
-            mobileMenu.classList.add("hidden");
-            mobileMenu.classList.remove("flex");
-        });
+    openMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden"); 
+        mobileMenu.classList.add("flex"); 
     });
 
-    </script>
+    closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+    });
+});
+
+    function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.classList.remove("hidden");
+    }
+
+    function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.classList.add("hidden"); 
+    }
+</script>
     
 </body>
 </html>
