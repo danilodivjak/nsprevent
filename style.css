@@ -18,6 +18,10 @@ body {
   background-color: #5f6dbd;
 }
 
+.nav-pozadina {
+  background-color: #5864ac;
+}
+
 .hero {
   background-image: url(./img/onama-3.png);
   background-size: cover;

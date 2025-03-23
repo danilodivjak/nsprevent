@@ -13,29 +13,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="hero hero-aboutUs flex flex-col px-16  full">
+    <div class="mobile-menu w-4/5 max-w-md border-2 rounded-md fixed bg-white hidden 
+    top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+    flex flex-col items-center justify-center p-10 shadow-lg">
+        <div class="mobile-menu-content">
+            <div class="mobile-nav flex gap-10 flex-col items-center uppercase my-10">
+                <a href="./index.html"><p class="text-lg">Pocetna</p></a>
+                <a href="./oNama.html"><p class="text-lg">O nama</p></a>
+                <a href="./Usluge.html"><p class="text-lg">Nase Usluge</p></a>
+                <a href="./index.html#contact" class="text-lg">Kontakt</a>
+                <img src="./img/mobile-close.svg" class="w-10">
+            </div>  
+        </div>
+    </div>
 
-        <div class="header flex flex-row items-between w-full justify-between my-10">
+    <div class="hero flex flex-col px-16  full max-md:px-12 max-sm:px-6">
+
+        <div class="header flex flex-row items-center w-full justify-between my-10">
                 <div class="logo">
                     <img src="./img/logo.png">
                 </div>
                 <div class="nav flex gap-10">
-                    <a href="./index.html"><p class="text-lg">Pocetna</p></a>
-                    <a><p class="text-lg">O Nama</p></a>
-                    <a href="./Usluge.html"><p class="text-lg">Nase Usluge</p></a>
-                    <a href="#contact"><p class="text-lg">Kontakt</p></a>
+                    <a href="./index.html"><p class="text-lg max-sm:hidden">Pocetna</p></a>
+                    <a href="./oNama.html"><p class="text-lg max-sm:hidden">O Nama</p></a>
+                    <a href="./Usluge.html"><p class="text-lg max-sm:hidden">Nase Usluge</p></a>
+                    <a href="#contact"><p class="text-lg max-sm:hidden">Kontakt</p></a>
+                    <img src="./img/hamburger.svg" class="hidden max-sm:block w-10 menu-toggle">
                 </div>  
             </div>
 
-            <div class="hero-section hero-section-aboutUs flex flex-col mx-auto items-center gap-8 my-40">
-                <h1 class="text-6xl font-600 font-bold">NS PREVENT</h1>
-                <p class="text-lg text-white">DOO NOVI SAD</p>
-                <p class="text-2xl uppercase font-bold motive">Misli preventivno - radi bezbedno</p>
-                <div class="btn-section flex flex-row gap-5">
-                    <button class="blue-btn px-8 py-2 rounded-full font-bold text-xl">Kontakt</button>
-                    <button class="blue-btn px-8 py-2 rounded-full font-bold text-xl">Zahtev za uslugu</button>
+            <div class="hero-section flex flex-col mx-auto items-center gap-8 my-40 max-md:my-32 max-sm:my-28">
+                <h1 class="text-6xl font-600 font-bold max-sm:text-center">NS PREVENT</h1>
+                <p class="text-lg text-white max-sm:text-center">DOO NOVI SAD</p>
+                <p class="text-2xl uppercase font-bold motive max-sm:text-center max-sm:w-3/4">Misli preventivno <span class="max-sm:hidden">-</span> radi bezbedno</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us mx-20 my-10">
+        <div class="about-us-cards flex flex-col gap-12">
+
+            <div class="about-us-card flex flex-row shadow-xl rounded-lg">
+                <div class="about-us-img w-1/3 flex items-center justify-center">
+                    <img src="./img/profile.svg" class="w-2/3">
+                </div>
+                <div class="about-us-card-text w-2/3 flex flex-col gap-10 py-5 mx-5">
+                    <h1 class="font-bold text-3xl">Igor Šimonji</h1>
+                    <h1 class="font-bold text-2xl">Diplomirani hemicar / Master hemicar</h1>
+                    <ul class="list-disc mx-5 text-xl flex flex-col gap-3 my-10">
+                        <li>Preko 13 godina radnog iskustva u oblasti laboratorijskog ispitivanja i bezbednosti i zdravlja na radu.</li>
+                        <li>Licenca za obavljanje poslova ispitivanja uslova radne okoline.</li>
+                        <li>Licenca za obavljanje poslova Savetnika za bezbednost i zdravlje na radu.</li>
+                        <li>Uverenje o položenom stručnom ispitu za radnike koji rade na poslovima zaštite od požara.</li>
+                        <li>Sertifikati za internog proverivača za sisteme kvaliteta: ISO 9001, ISO 14001, ISO 45001, ISO EN 50001, ISO/IEC 27001, EN ISO 22301, ISO/IEC 17025 i ISO/IEC 17020.</li>
+                        <li>Licenca za izradu procene rizika od katastrofa i plana zaštite i spasavanja.</li>
+                        <li>Sertifikat o stručnoj osposobljenosti savetnika za bezbednost u transportu opasne robe (ADR).</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="about-us-card flex flex-row-reverse shadow-xl rounded-lg">
+                <div class="about-us-img w-1/3 flex items-center justify-center">
+                    <img src="./img/profile.svg" class="w-2/3">
+                </div>
+                <div class="about-us-card-text w-2/3 flex flex-col gap-10 py-5 mx-5">
+                    <h1 class="font-bold text-3xl">Zoran Cvetković</h1>
+                    <h1 class="font-bold text-2xl">Diplomirani inženjer zaštite životne sredine / Diplomirani inženjer zaštite na radu</h1>
+                    <ul class="list-disc mx-5 text-xl flex flex-col gap-3 my-10">
+                        <li>Preko 10 godina radnog iskustva u oblasti zaštite životne sredine i bezbednosti i zdravlja na radu.</li>
+                        <li>Licenca za obavljanje poslova Savetnika za bezbednost i zdravlje na radu.</li>
+                        <li>Licenca za obavljanje poslova Koordinatora za bezbednost i zdravlje na radu u fazi izvodjenja radova.</li>
+                        <li>Licenca za obavljanje poslova odgovornog lica za pregled i proveru opreme za rad i pregled i ispitivanje elektricnih i gromobranskih instalacija.</li>
+                        <li>Uverenje o položenom stručnom ispitu za radnike koji rade na poslovima zaštite od požara.</li>
+                        <li>Sertifikati za internog proverivača za sisteme kvaliteta: ISO 9001, ISO 14001, ISO 45001, ISO/IEC 17025 i ISO/IEC 17020.</li>
+                        <li>Licenca za izradu procene rizika od katastrofa i plana zaštite i spasavanja.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-us-card flex flex-row shadow-xl rounded-lg">
+                <div class="about-us-img w-1/3 flex items-center justify-center">
+                    <img src="./img/profile.svg" class="w-2/3">
+                </div>
+                <div class="about-us-card-text w-2/3 flex flex-col gap-10 py-5 mx-5">
+                    <h1 class="font-bold text-3xl">Dušan Cvetković</h1>
+                    <h1 class="font-bold text-2xl">Diplomirani inženjer građevinarstva</h1>
+                    <ul class="list-disc mx-5 text-xl flex flex-col gap-3 my-10">
+                        <li>Preko 30 godina radnog iskustva u oblasti građevinarstva.</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
