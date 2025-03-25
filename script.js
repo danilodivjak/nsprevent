@@ -4,19 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuOpenButton = document.getElementById("menu-open");
     const menuCloseButton = document.getElementById("menu-close");
 
-    // Funkcija za otvaranje menija
     function openMenu() {
         menu.classList.remove("hidden");
         overlay.classList.remove("hidden");
     }
 
-    // Funkcija za zatvaranje menija
     function closeMenu() {
         menu.classList.add("hidden");
         overlay.classList.add("hidden");
     }
 
-    // Event listeneri za otvaranje i zatvaranje menija
     menuOpenButton.addEventListener("click", openMenu);
     menuCloseButton.addEventListener("click", closeMenu);
     overlay.addEventListener("click", closeMenu);
