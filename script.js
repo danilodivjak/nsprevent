@@ -30,3 +30,12 @@ function openPopup(popupId) {
     const popup = document.getElementById(popupId);
     popup.classList.add("hidden"); 
     }
+
+    window.addEventListener("load", function () {
+        let preloader = document.getElementById("preloader");
+        preloader.style.opacity = "0";
+        preloader.style.transition = "opacity 0.5s ease-out";
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 500);
+    });

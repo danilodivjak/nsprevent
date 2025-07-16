@@ -9,9 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>NS Prevent</title>
 
+    <meta name="description" content="NS Prevent je specijalizovana firma za zaštitu na radu, procenu rizika i obuku zaposlenih. Kontaktirajte nas za sigurno i usklađeno radno okruženje.">
+    <meta name="keywords" content="zaštita na radu, procena rizika, obuka zaposlenih, NS Prevent, Novi Sad, Subotica">
+
+    <meta property="og:title" content="NS Prevent – Zaštita na radu">
+    <meta property="og:description" content="Specijalizovani smo za zaštitu na radu, procenu rizika i obuku zaposlenih. Obezbedite sigurno radno okruženje!">
+    <meta property="og:image" content="https://nsprevent.rs/img/logo.png">
+    <meta property="og:url" content="https://nsprevent.rs">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NS Prevent – Zaštita na radu">
+    <meta name="twitter:description" content="Specijalizovani smo za zaštitu na radu, procenu rizika i obuku zaposlenih. Obezbedite sigurno radno okruženje!">
+    <meta name="twitter:image" content="https://nsprevent.rs/img/logo.png">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
     <div id="menu-overlay" class="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-50 hidden"></div>
 
@@ -22,10 +41,10 @@
         <div class="mobile-menu-content">
             <div class="mobile-nav flex gap-10 flex-col items-center uppercase">
                 <a href="./index.html"><p class="text-lg">Početna</p></a>
-                <a href="./oNama.html"><p class="text-lg">O nama</p></a>
-                <a href="./Usluge.html"><p class="text-lg">Naše usluge</p></a>
+                <a href="./o-nama.html"><p class="text-lg">O nama</p></a>
+                <a href="./nase-usluge.html"><p class="text-lg">Naše usluge</p></a>
                 <a href="./index.html#contact" class="text-lg">Kontakt</a>
-                <img src="./img/mobile-close.svg" class="w-10 cursor-pointer" id="menu-close">
+                <img src="./img/mobile-close.svg" class="w-10 cursor-pointer" id="menu-close" alt="Zatvaranje menija">
             </div>  
         </div>
     </div>
@@ -34,14 +53,15 @@
 
         <div class="header flex flex-row items-center w-full justify-between my-10">
                 <div class="logo">
-                    <img src="./img/logo.png">
+                    <img src="./img/logo.png" alt="NS Prevent Logo">
                 </div>
                 <div class="nav flex gap-10">
                     <a href="./index.html"><p class="text-lg max-sm:hidden">Početna</p></a>
-                    <a href="./oNama.html"><p class="text-lg max-sm:hidden">O Nama</p></a>
-                    <a href="./Usluge.html"><p class="text-lg max-sm:hidden">Naše Usluge</p></a>
+                    <a href="./o-nama.html"><p class="text-lg max-sm:hidden">O Nama</p></a>
+                    <a href="./nase-usluge.html"><p class="text-lg max-sm:hidden">Naše Usluge</p></a>
                     <a href="#contact"><p class="text-lg max-sm:hidden">Kontakt</p></a>
-                    <img src="./img/hamburger.svg" class="hidden max-sm:block w-10 menu-toggle" id="menu-open">
+                    <a href="./licence-resenja.html"><p class="text-lg max-sm:hidden">Licence</p></a>
+                    <img src="./img/hamburger.svg" class="hidden max-sm:block w-10 menu-toggle" id="menu-open" alt="Meni">
                 </div>  
             </div>
 
@@ -60,22 +80,24 @@
         </div>
 
         <div class="contact-lower flex flex-col justify-between">
-            <h1 class="text-center my-8 text-4xl">Novi Sad</h1>
+            <h2 class="text-center my-8 text-4xl">Novi Sad</h2>
 
             <div class="contact-cards flex flex-row border-b-4 py-5 max-lg:grid max-lg:grid-cols-2 max-lg:gap-10 max-sm:flex max-sm:flex-col">
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/phone.svg" class="contact-logo">
+                        <img src="./img/phone.svg" class="contact-logo" alt="Konakt NS Prevent Logo">
                         <p>Telefon</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
+                        <p>Administracija: +381 69 8500 464</p>
                         <p>Igor: +381 63 833 47 47</p>
                         <p>Zoran: +381 60 170 23 77</p>
+                        <p>Srđan: +381 69 184 07 70 </p>
                     </div>
                 </div>
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/mail.svg" class="contact-logo">
+                        <img src="./img/mail.svg" class="contact-logo" alt="NS Prevent Email">
                         <p>Email</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -86,7 +108,7 @@
                 </div>
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/clock.svg" class="contact-logo">
+                        <img src="./img/clock.svg" class="contact-logo" alt="NS Prevent Radno vreme">
                         <p>Radno vreme</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -95,7 +117,7 @@
                 </div>
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center">
-                        <img src="./img/gps.svg" class="contact-logo">
+                        <img src="./img/gps.svg" class="contact-logo" alt="Lokacija NS Prevent">
                         <p>Adresa</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -109,12 +131,12 @@
                 </div>
             </div>
 
-            <h1 class="text-center my-8 text-4xl">Poslovna jedinica u Subotici</h1>
+            <h2 class="text-center my-8 text-4xl">Poslovna jedinica u Subotici</h2>
 
             <div class="contact-cards flex flex-wrap justify-center max-lg:grid max-lg:grid-cols-2 max-lg:gap-10 py-10 max-sm:flex max-sm:flex-col">
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/phone.svg" class="contact-logo">
+                        <img src="./img/phone.svg" class="contact-logo" alt="Konakt NS Prevent Logo Subotica">
                         <p>Telefon</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -124,7 +146,7 @@
                 
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/mail.svg" class="contact-logo">
+                        <img src="./img/mail.svg" class="contact-logo" alt="NS Prevent Email Subotica">
                         <p>Email</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -134,7 +156,7 @@
                 
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center gap-2">
-                        <img src="./img/clock.svg" class="contact-logo">
+                        <img src="./img/clock.svg" class="contact-logo" alt="NS Prevent Radno vreme Subotica">
                         <p>Radno vreme</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -144,7 +166,7 @@
                 
                 <div class="contact-card flex flex-col items-center justify-center p-5 w-1/4 gap-1 max-lg:w-full min-h-[100px] max-sm:border max-sm:rounded-lg max-sm:shadow-md">
                     <div class="flex flex-row justify-center items-center">
-                        <img src="./img/gps.svg" class="contact-logo">
+                        <img src="./img/gps.svg" class="contact-logo" alt="NS Prevent Lokacija Subotica">
                         <p>Adresa</p>
                     </div>
                     <div class="contact-info flex flex-col items-center justify-center">
@@ -166,21 +188,24 @@
         <div class="footer-content flex flex-col px-5 py-5 gap-5 max-sm:py-8 max-sm:py-8 max-sm:px-2">
             <div class="footer-top flex flex-row items-center justify-between max-md:flex-col max-md:gap-5">
                 <div class="footer-logo flex flex-row items-center">
-                    <img src="./img/logo-white.png">
+                    <img src="./img/logo-white.png" alt="NS Prevent Logo - zaštita na radu">
                     <h2 class="text-white text-4xl font-bold uppercase">NS Prevent</h2>
                 </div>
                 <div class="footer-nav flex flex-row gap-2 justify-end">
                     <a href="./index.html"><p class="text-lg text-white">Početna</p></a>
-                    <a href="./oNama.html"><p class="text-lg text-white">O nama</p></a>
-                    <a href="./Usluge.html"><p class="text-lg text-white">Naše usluge</p></a>
+                    <a href="./o-nama.html"><p class="text-lg text-white">O nama</p></a>
+                    <a href="./nase-usluge.html"><p class="text-lg text-white">Naše usluge</p></a>
                     <a href="#contact"><p class="text-lg text-white">Kontakt</p></a>
                 </div>
             </div>
             <div class="footer-info flex flex-row justify-between max-md:flex-col max-md:gap-5 max-md:items-center">
-                <div class="adress flex-1 flex-row items-start">
+                <div class="adress flex-1 flex-row justify-between items-start">
                     <section class="flex flex-col max-md:items-center">
                         <p class="text-white max-sm:text-center">Bulevar Jovana Dučića 47, Novi Sad</p>
                         <p class="text-white max-sm:text-center">Trg Cara Jovana Nenada br. 15, kanc. 114, Subotica</p>
+                    </section>
+                    <section class="w-2/4 my-2">
+                        <img src="./img/bonitet3.png">
                     </section>
                 </div>
 
@@ -189,14 +214,17 @@
                         <p class="text-white">office@nsprevent.rs</p>
                         <p class="text-white">igor.simonji@nsprevent.rs</p>
                         <p class="text-white">zoran.cvetkovic@nsprevent.rs</p>
+                        <p class="text-white">srdjan.ridanovic@nsprevent.com</p>
                         <p class="text-white">nina.ivanovic@nsprevent.rs</p>
                     </section>
                 </div>
 
                 <div class="email flex-1 flex-row-reverse items-start">
                     <section class="flex flex-col items-end max-md:items-center">
+                        <p class="text-white">Administracija: +381 69 8500 464</p>
                         <p class="text-white">Igor: +381 63 833 47 47 </p>
                         <p class="text-white">Zoran: +381 60 170 23 77</p>
+                        <p class="text-white">Srđan: +381 69 184 07 70</p>
                         <p class="text-white">Nina: +381 69 8500 460</p>
                     </section>
                 </div>

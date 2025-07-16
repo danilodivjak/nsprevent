@@ -13,6 +13,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
     <div id="menu-overlay" class="fixed top-0 left-0 w-full h-full bg-gray-900 opacity-50 hidden"></div>
 
@@ -23,8 +27,8 @@
         <div class="mobile-menu-content">
             <div class="mobile-nav flex gap-10 flex-col items-center uppercase">
                 <a href="./index.html"><p class="text-lg">Početna</p></a>
-                <a href="./oNama.html"><p class="text-lg">O nama</p></a>
-                <a href="./Usluge.html"><p class="text-lg">Naše usluge</p></a>
+                <a href="./o-nama.html"><p class="text-lg">O nama</p></a>
+                <a href="./nase-usluge.html"><p class="text-lg">Naše usluge</p></a>
                 <a href="./index.html#contact" class="text-lg">Kontakt</a>
                 <img src="./img/mobile-close.svg" class="w-10 cursor-pointer" id="menu-close">
             </div>  
@@ -39,8 +43,8 @@
             </div>
             <div class="nav flex gap-10 items-center">
                 <a href="./index.html"><p class="text-lg max-sm:hidden">Početna</p></a>
-                <a href="./oNama.html"><p class="text-lg max-sm:hidden">O Nama</p></a>
-                <a href="./Usluge.html"><p class="text-lg max-sm:hidden">Naše Usluge</p></a>
+                <a href="./o-nama.html"><p class="text-lg max-sm:hidden">O Nama</p></a>
+                <a href="./nase-usluge.html"><p class="text-lg max-sm:hidden">Naše Usluge</p></a>
                 <a href="./index.html#contact"><p class="text-lg max-sm:hidden">Kontakt</p></a>
                 <img src="./img/hamburger.svg" class="hidden max-sm:block w-10 menu-toggle" id="menu-open">
             </div> 
@@ -71,23 +75,53 @@
                 <div id="popup-1" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
                     <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
                         <h2 class="text-2xl font-bold mb-4">Nudimo :</h2>
-                        <ul class="list-disc mx-5 flex-grow">
-                            <li class="list-none font-bold text-xl">Konsalting u oblasti BZR</li>
-                            <li>Vođenje poslova BZR za druga pravna lica</li>
-                            <li>Izrada dokumentacije iz oblasti BZNR</li>
-                            <li>Obuka zaposlenih za bezbedan i zdrav rad</li>
-                            <li>Prijava radova i izrada elaborata o uređenju gradilišta</li>
-                            <li>Usluga koordinatora u fazi izvođenja radova</li>
-                            <li>Izrada plana preventivnih mera</li>
-                            <li>Prijava gradilišta prema inspekciji rada</li>
-                            <li>Prijava povrede na radu i izrada Izveštaja o povredi na radu</li>
-                            <li>Saradnja sa inspekcijom rada</li>
-                            <li>Izrada procedura, uputstava i obezbeđivanje oznaka iz oblasti BZR</li>
-                            <li>Organizovanje prethodnih i periodičnih lekarskih pregleda</li>
-                            <li class="list-none font-bold text-xl">Pregledi, provere i ispitivanja</li>
-                            <li>Pregledi i provere opreme za rad, pregled i ispitivanje električnih i gromobranskih instalacija u skladu sa Pravilnikom o postupku pregleda i provere opreme za rad i pregleda i ispitivanja električnih i gromobranskih instalacija i ispitivanja uslova radne sredine („Sl. glasnik RS“, br. 76/2024)</li>
-                            <li>Ispitivanje koncentracije zapaljivih i eksplozivnih gasova i para</li>
-                            <li>Organizovanje stručnih obuka za zaposlene (JPOA)</li>
+                        <ul class="list-disc mx-5 flex-grow space-y-2 border-b py-2">
+                            <h3 class="font-bold text-xl">Konsalting u oblasti BZR</h3>
+                            <li>Vođenje poslova bezbednosti i zdravlju na radu, usluge savetnika za bezbednost i zdravlje na radu;</li>
+                            <li>Izrada Akta o proceni rizika na radnom mestu i u radnoj sredini i svih ostalih normativnih dokumenata iz oblasti bezbednosti i zdravlja na radu;</li>
+                            <li>Izrada Programa obuke zaposlenih, rukovodioca i predstavnika zaposlenih za bezbedan i zdrav rad;</li>
+                            <li>Obuka zaposlenih, rukovodioca i predstavnika zaposlenih za bezbedan i zdrav rad;</li>
+                            <li>Prijava radova i izrada elaborata o uređenju gradilišta;</li>
+                            <li>Usluga koordinatora u fazi izvođenja radova;</li>
+                            <li>Izrada plana preventivnih mera;</li>
+                            <li>Prijava gradilišta prema inspekciji rada;</li>
+                            <li>Prijava povrede na radu i izrada Izveštaja o povredi na radu;</li>
+                            <li>Saradnja sa inspekcijom rada;</li>
+                            <li>Izrada procedura, uputstava i obezbeđivanje oznaka iz oblasti bezbednosti i zdravlja na radu;</li>
+                            <li>Organizovanje prethodnih i periodičnih lekarskih pregleda;</li>
+                        </ul>
+                        <ul class="list-disc mx-5 flex-grow space-y-2 border-b py-2">
+                            <h3 class="font-bold text-xl">Pregledi i provere opreme za rad</h3>
+                            <li>Dizalice i uređaji bez obzira na nosivost, na mehanizovani ili ručni pogon (osim auto-dizalice koja je deo opreme na putničkim automobilima), koji služe za dizanje, spuštanje i prenošenje tereta pomoću čeličnog ili drugog užeta, lanca, hidrauličnog sistema i dr.;</li>
+                            <li>Podizna platforma na mehanizovani pogon koja, pomoću ugrađene platforme ili korpe, služi za dizanje i spuštanje zaposlenih radi obavljanja radnih operacija;</li>
+                            <li>Viseća skela, na mehanizovani ili ručni pogon, koja na vertikalnim površinama zgrada, na fasadama zgrada, gradilištima i u objektima namenjenim za radne i pomoćne prostorije služi za dizanje i spuštanje zaposlenih i materijala, zajedno sa sistemom vezivanja zaposlenih u cilju sprečavanja pada sa visine;</li>
+                            <li>Samohodno vozilo, na mehanizovani pogon, koje se koristi za unutrašnji transport – vuču, potiskivanje, dizanje, spuštanje i prenošenje tereta;</li>
+                            <li>Građevinska oprema, na mehanizovani pogon, koja se koristi za unutrašnji transport – vuču, potiskivanje, dizanje, spuštanje, prenošenje, sabijanje, razastiranje, podbušivanje materijala i tereta;</li>
+                            <li>Uređaji neprekidnog transporta (transporteri) za prenos tereta (osim transportera koji se koriste u trgovinskim i sličnim objektima);</li>
+                            <li>Presa, makaze, nož i valjak, na mehanizovani pogon koji su fiksno postavljeni za sečenje, presovanje, savijanje i izvlačenje materijala, a u koje se materijal za obradu ulaže ili vadi ručno;</li>
+                            <li>Oprema za preradu i obradu metala, drveta, plastičnih i sličnih materijala, na mehanizovani pogon, koja je privremeno ili na duži vremenski period postavljena i/ili oslonjena, u koju se materijal za obradu ulaže ili vadi ručno;</li>
+                            <li>Uređaji u kojima se nanose i suše premazna sredstva čije komponente u dodiru sa vazduhom obrazuju zapaljive i eksplozivne smeše, isparenja i hemijske štetnosti opasne po zdravlje zaposlenih;</li>
+                            <li>Oprema, odnosno postrojenja za proizvodnju, punjenje, merenje i kontrolu, sa cevovodima za napajanje, razvođenje i transport eksplozivnih, otrovnih i zagušljivih fluida – gasova ili tečnosti, osim prirodnog gasa (zemni gas), u objektima koji se koriste kao radni i pomoćni prostor, osim za opremu čiji je pregled i provera obuhvaćen drugim propisima;</li>
+                            <li>Protiveksplozijsko zaštićena oprema za rad, osim protiveksplozijski zaštićene opreme za rad čiji je pregled i provera obuhvaćen drugim propisima;</li>
+                            <li>Električne instalacije niskog napona i gromobranske instalacije u objektu namenjenom za radne i pomoćne prostorije;</li>
+                            <li>Privremena električna instalacija sa uređajima, opremom i priborom, postavljena za vreme izgradnje građevinskih objekata ili izvođenja drugih radova;</li>
+                            <li>Tehnološke linije i druga kombinovana oprema za rad koja predstavlja funkcionalnu tehnološku celinu, a sadrži neki od tipova opreme za rad iz tač. od 1) do 12), pri čemu se pregleda i proverava kao jedinstveno postrojenje;</li>
+                            <li>Ostala oprema za rad (mašine, uređaji, postrojenja, instalacije i alati) za koju je poslodavac aktom o proceni rizika utvrdio da se na njoj vrše preventivni i periodični pregledi i provere.</li>
+                        </ul>
+                        <ul class="list-disc mx-5 flex-grow space-y-2 border-b py-2">
+                            <h3 class="font-bold text-xl">Ispitivanja uslova radne sredine</h3>
+                            <li>Mikroklima (temperatura, brzina strujanja i relativna vlažnost vazduha);</li>
+                            <li>Hemijske štetnosti (gasovi, pare, dimovi i prašine,  ispitivanje koncentracije zapaljivih i eksplozivnih gasova i para);</li>
+                            <li>Fizičke štetnosti (buka, vibracije i štetna zračenja – osim jonizujućih zračenja);</li>
+                            <li>Osvetljenost;</li>
+                            <li>Izrada Plana i programa monitoringa uslova radne sredine za hemijske i fizičke štetnosti;</li>
+                            <li>Organizovanje ispitivanja bioloških štetnosti;</li>
+                            <li>Organizovanje izrade Plana  programa monitoringa uslova radne sredine za biološke štetnosti.</li>
+                        </ul>
+                        <ul class="list-disc mx-5 flex-grow space-y-2">
+                            <h3 class="font-bold text-xl">Ostali pregledi i ispitivanja</h3>
+                            <li>Ispitivanje koncentracije zapaljivih i eksplozivnih gasova i para;</li>
+                            <li>Termovizijsko ispitivanje električnih instalacija i uređaja</li>
                         </ul>
                         <button onclick="closePopup('popup-1')" class="btn-blue py-3 my-2 px-6 mt-auto rounded-full text-white mx-auto">Zatvori</button>
                     </div>
@@ -107,9 +141,10 @@
                     <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
                         <h2 class="text-2xl font-bold mb-4">Nudimo :</h2>
                         <ul class="list-disc mx-5 flex-grow">
-                            <li>Izrada Pravila zaštite od požara</li>
-                            <li>Izrada plana evakuacije</li>
-                            <li>Izrada programa osnovne obuke zaštite od požara za zaposlene</li>
+                            <li>Izrada Pravila zaštite od požara;</li>
+                            <li>Izrada Plana evakuacije i uputstva za postupanje u slučaju požara;</li>
+                            <li>Izrada Programa osnovne obuke zaštite od požara za zaposlene;</li>
+                            <li>Konsultantske usluge iz oblasti zaštite od požara.</li>
                         </ul>
                         <button onclick="closePopup('popup-2')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
                     </div>
@@ -129,12 +164,11 @@
                     <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
                         <h2 class="text-2xl font-bold mb-4">Nudimo :</h2>
                         <ul class="list-disc mx-5 flex-grow">
-                            <li>Izrada Studija o proceni uticaja na životnu sredinu</li>
-                            <li>Izrada elaborata o upravljanju otpadom na gradilištu</li>
-                            <li>Izrada Plana upravljanja otpadom od građenja i rušenja</li>
-                            <li>Izrada Plana upravljanja otpadom</li>
-                            <li>Usluge ADR savetnika</li>
-                            <li>Obuka rukovaoca opasnim teretom sa stanovišta ADR-a</li>
+                            <li>Izrada Studija o proceni uticaja na životnu sredinu;</li>
+                            <li>Izrada Elaborata o upravljanu otpadom na gradilištu;</li>
+                            <li>Izrada Plana upravljanja otpadom od građenja i rušenja;</li>
+                            <li>Izrada Plana upravljanja otpadom;</li>
+                            <li>Izrada Plana monitoringa vazduha, vode, zemljišta buke, otpada;</li>
                         </ul>
                         <button onclick="closePopup('popup-3')" class="btn-blue py-3 px-6 my-2 mt-auto rounded-full text-white mx-auto">Zatvori</button>
                     </div>
@@ -197,17 +231,54 @@
                 
                 <div id="popup-6" class="popup hidden absolute inset-0 bg-opacity-50 z-10">
                     <div class="popup-content bg-white p-6 rounded-2xl overflow-y-auto flex flex-col h-full max-h-[500px]">
-                        <h2 class="text-2xl font-bold mb-4 max-md:text-lg">Sa našim partnerima možemo da obezbedimo
-                            i pružanje usluga iz oblasti ispitivanja:
-                        </h2>
-                        <ul class="list-disc mx-5 flex-grow">
+                        <h2 class="text-2xl font-bold mb-4 max-md:text-lg">Sa našim partnerima možemo da obezbedimo i pružanje usluga:</h2>
+                        <ul class="list-disc mx-5 flex-grow space-y-1 mb-5">
+                            <h3 class="text-xl font-bold max-md:text-lg">Iz oblasti ispitivanja:</h3>
                             <li>Ambijentalnog vazduha</li>
                             <li>Voda (otpadne, podzemne i dr.)</li>
-                            <li>Buke u životnoj sredini</li>
                             <li>Zemljišta, sedimenta i mulja</li>
                             <li>Otpada (kategorizacija otpada)</li>
-                            <li>Kao i ostale usluge iz oblasti ZOP-a</li>
+                            <li>Buke u životnoj sredini</li>
                         </ul>
+
+                        <ul class="list-disc mx-5 flex-grow space-y-1 mb-5">
+                            <h3 class="text-xl font-bold max-md:text-lg">Iz oblasti kontrolisanja:</h3>
+                            <li>Kontrolisanje instalacija hidrantske mreže</li>
+                            <li>Kontrolisanje mobilnih uređaja za gašenje požara</li>
+                            <li>Kontrolisanje uređaja za automatsko otkrivanje i dojavu požara</li>
+                            <li>Kontrolisanje instalacija i uređaja za detekciju eksplozivnih i zapaljivih gasova</li>
+                        </ul>
+
+                        <ul class="list-disc mx-5 flex-grow space-y-1 mb-5">
+                            <h3 class="text-xl font-bold max-md:text-lg">Iz oblasti medicine rada:</h3>
+                            <li>Preventivni i periodični lekarski pregledi za zaposlene i izdavanje uverenja</li>
+                            <li>Obuka iz prve pomoći</li>
+                            <li>Određivanje radnih mesta na kojima mogu raditi i invalidi rada</li>
+                            <li>Izrada elaborata za radni staž sa uvećanim trajanjem</li>
+                            <li>Zdravstvena analiza radnog mesta (za radna mesta sa uvećanim rizikom, sa predlogom dodatnih mera zaštite)</li>
+                            <li>Stručno mišljenje o potrebi primene mera zaštite na radnom mestu</li>
+                            <li>Ocena primenjenih mera zaštite na radnom mestu</li>
+                            <li>Izrada elaborata o mogućim efektima toksičnih materija na zdravlje zaposlenih
+                                (monitoring, toksokinetika, toksodinamika, efekti na zdravlje, predlog mera zaštite)
+                            </li>
+                        </ul>
+
+                        <ul class="list-disc mx-5 flex-grow space-y-1 mb-5">
+                            <h3 class="text-xl font-bold max-md:text-lg">Ostale usluge:</h3>
+                            <li>Transport i zbrinjavanje opasnog otpada</li>
+                            <li>Transport i zbrinjavanje neopasnog otpada</li>
+                            <li>Usluge ADR savetnika</li>
+                            <li>Obuka rukovaoca opasnim teretom / opasnim hemijskim materijama</li>
+                            <li>Usluge savetnika za hemikalije</li>
+                            <li>
+                                Kreiranje i vođenje naloga privrednog subjekta na Nacionalnom registru izvora
+                                zagađivanja (nacionalni servis za izveštavanje Agencije za zaštitu životne sredine), kao i
+                                popunjavanje obaveznih godišnjih izveštaja u vezi generisanog otpada, emisija (vazduh,
+                                zemlja i voda), uvezene opreme i sirovina koji potpadaju pod posebne zakonske zahteve
+                                zbog njihovog uticaja na životnu sredinu
+                            </li>
+                        </ul>
+
                         <button onclick="closePopup('popup-6')" class="btn-blue py-3 my-2 px-6 mt-auto rounded-full text-white mx-auto">Zatvori</button>
                     </div>
                 </div>
@@ -220,13 +291,13 @@
         <div class="footer-content flex flex-col px-5 py-5 gap-5 max-sm:py-8 max-sm:py-8 max-sm:px-2">
             <div class="footer-top flex flex-row items-center justify-between max-md:flex-col max-md:gap-5">
                 <div class="footer-logo flex flex-row items-center">
-                    <img src="./img/logo-white.png">
+                    <img src="./img/logo-white.png" alt="NS Prevent Logo - zaštita na radu">
                     <h2 class="text-white text-4xl font-bold uppercase">NS Prevent</h2>
                 </div>
                 <div class="footer-nav flex flex-row gap-2 justify-end">
                     <a href="./index.html"><p class="text-lg text-white">Početna</p></a>
-                    <a href="./oNama.html"><p class="text-lg text-white">O nama</p></a>
-                    <a href="./Usluge.html"><p class="text-lg text-white">Naše usluge</p></a>
+                    <a href="./o-nama.html"><p class="text-lg text-white">O nama</p></a>
+                    <a href="./nase-usluge.html"><p class="text-lg text-white">Naše usluge</p></a>
                     <a href="#contact"><p class="text-lg text-white">Kontakt</p></a>
                 </div>
             </div>
@@ -243,14 +314,17 @@
                         <p class="text-white">office@nsprevent.rs</p>
                         <p class="text-white">igor.simonji@nsprevent.rs</p>
                         <p class="text-white">zoran.cvetkovic@nsprevent.rs</p>
+                        <p class="text-white">srdjan.ridanovic@nsprevent.com</p>
                         <p class="text-white">nina.ivanovic@nsprevent.rs</p>
                     </section>
                 </div>
 
                 <div class="email flex-1 flex-row-reverse items-start">
                     <section class="flex flex-col items-end max-md:items-center">
+                        <p class="text-white">Administracija: +381 69 8500 464</p>
                         <p class="text-white">Igor: +381 63 833 47 47 </p>
                         <p class="text-white">Zoran: +381 60 170 23 77</p>
+                        <p class="text-white">Srđan: +381 69 184 07 70</p>
                         <p class="text-white">Nina: +381 69 8500 460</p>
                     </section>
                 </div>
